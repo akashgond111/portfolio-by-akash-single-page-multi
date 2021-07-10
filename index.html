@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    .top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 60%;
+  left: 27%;
+  transform: translate(-50%, -50%);
+  color: darkred;
+  text-size-adjust: 15px;
+}
+.typewriter {
+    font-family: Courier, monospace;
+	display: inline-block;
+}
+
+.typewriter-text {
+    display: inline-block;
+  	overflow: hidden;
+  	letter-spacing: 2px;
+ 	animation: typing 5s steps(30, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    font-size: 50px;
+    font-weight: 700;
+    border-right: 4px solid orange;
+    box-sizing: border-box;
+}
+
+@keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 100% 
+    }
+}
+
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: orange; 
+    }
+}
+h1 {
+  -moz-animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  -moz-animation-name: slidein-left;
+  -webkit-animation-name: slidein-left;
+}
+
+@-moz-keyframes slidein-left {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes slidein-left {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgb(23, 201, 23),0 17px 50px 0 rgb(0, 0, 0);
+}
+.button2 {
+  box-shadow: 0 12px 16px 0 rgb(226, 212, 12),0 17px 50px 0 rgb(0, 0, 0);
+}
+.button5:hover {
+  box-shadow: 0 12px 16px 0 rgb(23, 201, 23),0 17px 50px 0 rgb(0, 0, 0);
+}
+.button {
+  background-color: #cc0c0c; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.button3:hover {
+  box-shadow: 0 12px 16px 0 rgb(223, 219, 6),0 17px 50px 0 rgba(39, 209, 130, 0.979);
+}
+
+.button4 {
+  background-color: #0fcf29; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+#ap:hover {
+  box-shadow: 0 12px 16px 0 rgb(218, 10, 10),0 17px 50px 0 rgb(37, 218, 31);
+}
+#ap2:hover {
+  box-shadow: 0 12px 16px 0 rgb(238, 234, 21),0 17px 50px 0 rgb(247, 143, 25);
+}
+#glob:hover{
+    box-shadow: 0 12px 16px 0 hsl(323, 86%, 51%),0 17px 50px 0 rgb(236, 21, 147);
+
+}
+.footer{
+ 
+    width: 100%;
+    height: 150px;
+background-image: linear-gradient(to right, rgb(217, 224, 228), rgba(12, 212, 62, 0.493));
+      
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  box-shadow: 0 12px 16px 0 rgb(57, 212, 18),0 17px 50px 0 rgb(12, 218, 74);
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+#extra{
+    width: 100%;
+    height: 500px;
+background-image: linear-gradient(to right, rgb(132, 20, 155), rgba(14, 211, 63, 0.849));
+text-align: center;
+}
+
+
+
+
+
+#navArea {
+display: flex;
+justify-content: space-between;
+padding: 0px 0%;
+position: fixed;
+width: 100%;
+top: 0px;
+background: white;
+transition: background 0.5s;
+}
+section {
+height: 500px;
+padding: 200px 0;
+font-size: 50px;
+text-align: center;
+text-transform: uppercase;
+font-weight: 900;
+}
+
+section:nth-of-type(1) {
+margin-top: 84px;
+}
+
+#navArea .logo img {
+height: 84px;
+transition: height 0.5s;
+}
+
+#navArea ul {
+list-style: none;
+display: flex;
+align-items: center;
+width: 400px;
+justify-content: space-around;
+}
+#navArea ul li a {
+text-decoration: none;
+color: #000;
+font-weight: 600;
+transition: color 0.5s;
+}
+
+#navArea.is-sticky {
+background: rgb(230, 25, 110);
+}
+
+#navArea.is-sticky a {
+color:#fff;
+}
+
+#navArea.is-sticky .logo img {
+height:64px;
+}
+
+section:nth-of-type(2n) {
+background: darkcyan;
+color: #fff;
+}
+
+section:nth-of-type(2n+1) {
+background: white;
+color: #333;
+}
+
+
+
+
+#extra1{
+    width: 100%;
+    height: 500px;
+background-image: linear-gradient(to right, rgb(30, 163, 204), rgba(33, 240, 85, 0.849));
+text-align: center;
+}
+
+#profile:hover {
+  box-shadow: 0 12px 16px 0 rgb(8, 192, 63),0 17px 50px 0 rgba(39, 209, 130, 0.979);
+}
+#profile {
+  box-shadow: 0 12px 16px 0 rgb(238, 11, 11),0 17px 50px 0 rgba(209, 39, 138, 0.979);
+}
+
+</style>
+</head>
+<body>
+
+
+
+<div class="container">
+  <img src="RWBzYW.jpg" alt="Snow" style="width:100%;">
+ <nav id="navArea">
+    <div class="logo">
+      <!-- <a href="#">
+        <img src="runjeet.png" alt="your company logo">
+      </a> -->
+    </div>
+    <ul>
+      <li><a href="#"> <button class="button button2">Home</button></a></li>
+      <li><a href="#"> <button class="button button2">About</button></a></li>
+      <li><a href="#"> <button class="button button2">Home</button></a></li>
+      <div id="profile">
+      <img style="width: 50px;" src="profile.png">
+    </div>
+      
+     
+    </ul>
+    </nav>
+    
+  <h2>.</h2>
+    
+
+  <div class="centered">
+ 
+      <div class="typewriter">
+    <div class="typewriter-text">Portfolio Akash Gond</div>
+  <p style="font-size: 25px;">software engg & Web devloper<br> Gorakhpur, Uttar Pradesh, India<br>Email-akashgondranjeet1@gamil.com</p>
+  <button class="button button5">more detials</button>
+</div>
+</div>
+</div>
+<table style="width:100%">
+    <tr>
+      <th>
+          <div id="ap">
+          <img width="70%" height="50%" src="RLP.png"></th>
+        </div>
+      <th><h1 style="color:#d80000">Our Project</h1>
+        <h1 style=" font-family: myFirstFont;  height: 200px;
+        background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+      ">Online photography & Service Site <br>Personal Data storage,google 2021 <br>Gorakhpur, Up, India<br> <button class="button4 button3">more detials</button></h1>
+       
+    </th> 
+     </tr>
+  </table>
+ 
+  <div id="extra1">
+
+  </div>
+ <h1>&emsp;&emsp;&nbsp;Software Devlopment &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Web Devlopment</h1>
+
+<table style="width: 100%;">
+<tr>
+    <th>
+<img src="iimp-removebg.png">
+    </th>
+    <th>
+        <div id="glob">
+        <img  src="glob-removebg.png">
+    </div>
+    </th>
+    <th>
+        <img src="iimp-removebg.png">
+    </th>
+</tr>
+
+</table>
+
+
+
+
+<p style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+    The number of lines in a paragraph depends on the size of the browser window. If you resize the browser window, the number of lines in this paragraph will change.
+    The number of lines in a paragraph depends on the size of the browser window. If you resize the browser window, the number of lines in this paragraph will change.
+
+    The number of lines in a paragraph depends on the size of the browser window. If you resize the browser window, the number of lines in this paragraph will change.
+    The number of lines in a paragraph depends on the size of the browser window. If you resize the browser window, the number of lines in this paragraph will change.
+    The number of lines in a paragraph depends on the size of the browser window. If you resize the browser window, the number of lines in this paragraph will change.
+    The number of lines in a paragraph depends on the size of the browser window. If you resize the browser window, the number of lines in this paragraph will change.
+    The number of lines in a paragraph depends on the size of the browser window. If you resize the browser window, the number of lines in this paragraph will change.
+    The number of lines in a paragraph depends on the size of the browser window. If you resize the browser window, the number of lines in this paragraph will change.
+    </p>
+
+
+<div id="extra">
+    <table style="width: 100%;">
+        <tr>
+      <h2>.</h2>
+          <th><img src="gupblog.png">
+        <h2 style="color: white;">It is a bloging site,<br>that is used to update the news<br>to connect every perssion on the online</h2>
+        
+        </th>
+          <th><img src="CCM.png">
+            <h2 style="color: white;">college code massenger,<br>that is used to provide a coding task & challenge <br>to connect every perssion on the online</h2>
+        </th>
+          <th><img src="bitacesspoint.png">
+            <h2 style="color: white;">online  college site,<br>that is used to access online  <br>as library ,attendance,fee payment,ebook</h2>
+        </th>
+          
+        </tr>
+    
+     
+      </table>
+</div>
+<p style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+    The number of lines in a paragraph depends on the size of the browser window. If you resize the browser window, the number of lines in this paragraph will change.
+    The number of lines in a paragraph depends on the size of the browser window. If you resize the browser window, the number of lines in this paragraph will change.
+
+    The number of lines in a paragraph depends on the size of the browser window. If you resize the browser window, the number of lines in this paragraph will change.
+    The number of lines in a paragraph depends on the size of the browser window. If you resize the browser window, the number of lines in this paragraph will change.
+    The number of lines in a paragraph depends on the size of the browser window. If you resize the browser window, the number of lines in this paragraph will change.
+    The number of lines in a paragraph depends on the size of the browser window. If you resize the browser window, the number of lines in this paragraph will change.
+    The number of lines in a paragraph depends on the size of the browser window. If you resize the browser window, the number of lines in this paragraph will change.
+    The number of lines in a paragraph depends on the size of the browser window. If you resize the browser window, the number of lines in this paragraph will change.
+    </p>
+<div class="footer">
+    
+    <h2 style="text-align: center;"><!-- Add font awesome icons -->
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+     
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-instagram"></a></h2>
+  </div>
+  <script>
+  window.addEventListener("scroll", function() {
+    let navArea = document.getElementById("navArea");
+    
+    if (window.pageYOffset > 0) {
+    navArea.classList.add("is-sticky");
+    } else {
+    navArea.classList.remove("is-sticky");
+    }
+    });
+</script>
+</body>
+</html> 
